@@ -273,8 +273,6 @@
   background-repeat: no-repeat;
 }
 
-
-
     @media (max-width: 1024px) {
       .container {
         padding-left: 32px;
@@ -292,7 +290,27 @@
       }
     }
       /* NAV SCROLL SCRIPT DEPENDENCY */
+
+    /* NAV MOBILE – solo marca centrada */
+@media (max-width: 480px) {
+
+  /* Oculta el menú */
+  header nav {
+    display: none;
+  }
+
+  /* Centra el logo */
+  .header .nav {
+    justify-content: center;
+  }
+
+  .nav-logo {
+    margin: 0 auto;
+  }
+}
   </style>
+
+  
   
   <script>
     window.addEventListener('scroll', () => {
